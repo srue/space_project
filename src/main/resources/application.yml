@@ -2,13 +2,6 @@ spring:
   profiles:
     active: local
 ---
-log:
-  config:
-    path: /home/ubuntu/space_project/log
-    filename: log_test
-    error:
-      filename: log_test_error
----
 spring:
   batch:
     job:
