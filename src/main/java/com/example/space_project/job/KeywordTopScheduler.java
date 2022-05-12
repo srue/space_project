@@ -23,7 +23,7 @@ public class KeywordTopScheduler {
     @Autowired
     private KeywordTopJobConfig keywordTopJobConfig;
 
-    @Scheduled(cron = "0 6 11 * * *")
+    @Scheduled(cron = "0 */5 * * * *")
     public void runJob() {
         Map<String, JobParameter> configMap = new HashMap<>();
         configMap.put("time", new JobParameter(System.currentTimeMillis()));
