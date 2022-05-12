@@ -2,11 +2,18 @@ spring:
   profiles:
     active: local
 ---
+log:
+  config:
+    path: ./log
+    filename: log_test
+    error:
+      filename: log_test_error
+---
 spring:
   batch:
-    initialize-schema: always
     job:
-      enable: false
+      enabled: false
+    initialize-schema: always
   jpa:
     open-in-view: true
     hibernate:

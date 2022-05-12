@@ -28,7 +28,7 @@ public class KeywordTopJobConfig {
 
     @Bean
     public Job keywordTop() {
-        return jobBuilderFactory.get("simpleJob")
+        return jobBuilderFactory.get("keywordTopJob")
                 .start(step(null))
                 .build();
     }
