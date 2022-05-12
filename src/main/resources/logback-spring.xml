@@ -5,11 +5,11 @@
     <springProfile name="dev">
         <property resource="application.yml"/>
         <!-- log file path -->
-        <property name="LOG_PATH" value="${log.config.path}"/>
+        <property name="LOG_PATH" value="/home/ubuntu/space_project/log"/>
         <!-- log file name -->
-        <property name="LOG_FILE_NAME" value="${log.config.filename}"/>
+        <property name="LOG_FILE_NAME" value="log_test"/>
         <!-- err log file name -->
-        <property name="ERR_LOG_FILE_NAME" value="${log.config.error.filename}"/>
+        <property name="ERR_LOG_FILE_NAME" value="log_test_error"/>
         <!-- log pattern -->
         <property name="LOG_PATTERN" value="%-5level %d{yy-MM-dd HH:mm:ss} [%thread] [%logger{0}-%M:%line] - %msg%n "/>
 
