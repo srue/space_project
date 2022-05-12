@@ -4,7 +4,7 @@ spring:
 ---
 log:
   config:
-    path: ./log
+    path: /home/ubuntu/space_project/log
     filename: log_test
     error:
       filename: log_test_error
